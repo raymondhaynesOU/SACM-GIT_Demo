@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Testing Javascript</title>
+		<script>
+			function displayMessage() {
+				document.getElementById("hello").innerHTML = "The button worked!";
+			}
+			
+			function showLink() {
+				if (document.getElementById("link").style.visibility == "visible") {
+					document.getElementById("link").style.visibility = "hidden";
+				}
+				else {
+					document.getElementById("link").style.visibility = "visible";
+				}	
+			}	
+		</script>
+	</head>
+	
+	<body style="background-color:crimson; color:white; font-family:times; text-align:center; font-size:48">
+		<button type="button" onclick="displayMessage()" style="font-size:48; font-family:times">Click Me!</button>
+		<p id="hello"></p>
+		<button type="button" onclick="showLink()" style="font-size:48; font-family:times">Show Link</button>
+		<p></p>
+		<a id="link" href="https://www.w3schools.com/js" style="visibility:hidden; color:white">Learn How to Code Using Javascript</a>
+	</body>
+</html>
